@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: cms
 
 media_folder: "uploads"
 public_folder: "uploads"
@@ -15,5 +15,3 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Description", name: "description", widget: "string", required: true }
       - { label: "Date", name: "date", widget: "datetime", required: true }
-
-# I hope this works :)
