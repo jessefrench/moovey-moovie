@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -17,18 +16,18 @@
 				<header>
 					<div class="head_container">
 						<div class="logo">
-							<a href="#home">MOOvey MOOvie</a>
+							<a href="index.html#home">MOOvey MOOvie</a>
 						</div>
 						<div class="menu" id="myTopnav">
 							<ul>
-								<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()">&#9776;</a>
-								<li><a href="index.html#home">Home</a></li>
-								<li><a href="index.html#about">About</a></li>
-								<li><a href="index.html#capabilities">Capabilities</a></li>
-								<li><a href="index.html#event-support">Event Support</a></li>
-								<li><a href="index.html#contact">Contact</a></li>
-								<li><a href="index.html#gallery">Gallery</a></li>
-								<li><a href="events.html">Events</a></li>
+								<a href="javascript:void(0);" style="font-size:15px;" class="navicon" onclick="openNav()">&#9776;</a>
+								<li class="nav"><a href="index.html#home">Home</a></li>
+								<li class="nav"><a href="index.html#about">About</a></li>
+								<li class="nav"><a href="index.html#capabilities">Capabilities</a></li>
+								<li class="nav"><a href="index.html#event-support">Event Support</a></li>
+								<li class="nav"><a href="index.html#contact">Contact</a></li>
+								<li class="nav"><a href="index.html#gallery">Gallery</a></li>
+								<li class="nav"><a href="events.html">Events</a></li>
 							</ul>
 						</div>
 					</div>
@@ -42,7 +41,6 @@
 					  <a href="index.html#contact">Contact</a>
 					  <a href="index.html#gallery">Gallery</a>
 					  <a href="events.html">Events</a>
-					  <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
 				</div>
 
                 <!-- Five -->
@@ -82,18 +80,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-
-        <script>
-            if (window.netlifyIdentity) {
-              window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                  window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                  });
-                }
-              });
-            }
-        </script>
 
     </body>
 </html>

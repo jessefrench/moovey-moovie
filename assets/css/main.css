@@ -21,13 +21,17 @@
 	height: 100%;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 525px) {
 	.big-calendar {
 		display: none;
 	}
+
+	.small-calendar {
+		height: 450px;
+	}
 }
 
-@media screen and (min-width: 501px) {
+@media screen and (min-width: 525px) {
 	.small-calendar {
 		display: none;
 	}
@@ -82,17 +86,7 @@ header{
 	    padding-right: 15px;
 }
 
-.menu a:hover { 
-	background: rgba(247, 202, 24, 0.1);
-    border:#F7CA18;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 2px;
-    transition: 0.2s;
-
-}
-
-.icon{
+.navicon{
 	display: none;
 }
 
@@ -106,34 +100,18 @@ menu.responsive{
     text-align: left;
 }
 
-@media screen and (max-width: 835px) {
-	.logo img {
-	    height: 40px;
+@media screen and (max-width: 924px) {
+	.menu li {
+		display: none;
 	}
-	ul > li:first-of-type{
-		display:none;
-	}
-	.menu{
-		margin:0;
-	}
-}
-
-@media screen and (max-width: 690px) {
-
-.menu li{
-	display: none;
-}
-
-.icon{
-    font-weight: 900 !important;
-        font-size: 27px !important;
-    padding: 0;
-    margin: 0;
-       margin-top: -22px;
-    display: flex;
-}
-	.logo img {
-	    height: 40px;
+	
+	.navicon {
+		font-weight: 900 !important;
+			font-size: 27px !important;
+		padding: 0;
+		margin: 0;
+		   margin-top: -18px;
+		display: flex;
 	}
 }
 

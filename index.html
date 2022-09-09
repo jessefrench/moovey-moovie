@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -14,21 +13,21 @@
 			<div id="wrapper" class="divided">
 				
 				<!-- Header -->
-				<header>
+				<header id="home">
 					<div class="head_container">
 						<div class="logo">
 							<a href="#home">MOOvey MOOvie</a>
 						</div>
 						<div class="menu" id="myTopnav">
 							<ul>
-								<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="openNav()">&#9776;</a>
-								<li><a href="#home">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#capabilities">Capabilities</a></li>
-								<li><a href="#event-support">Event Support</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#gallery">Gallery</a></li>
-								<li><a href="events.html">Events</a></li>
+								<a href="javascript:void(0);" style="font-size:15px;" class="navicon" onclick="openNav()">&#9776;</a>
+								<li class="nav"><a href="#home">Home</a></li>
+								<li class="nav"><a href="#about">About</a></li>
+								<li class="nav"><a href="#capabilities">Capabilities</a></li>
+								<li class="nav"><a href="#event-support">Event Support</a></li>
+								<li class="nav"><a href="#contact">Contact</a></li>
+								<li class="nav"><a href="#gallery">Gallery</a></li>
+								<li class="nav"><a href="events.html">Events</a></li>
 							</ul>
 						</div>
 					</div>
@@ -38,20 +37,19 @@
 					  <a href="#home">Home</a>
 					  <a href="#about">About</a>
 					  <a href="#capabilities">Capabilities</a>
-					  <a href="#event-Support">Event Support</a>
+					  <a href="#event-support">Event Support</a>
 					  <a href="#contact">Contact</a>
 					  <a href="#gallery">Gallery</a>
 					  <a href="events.html">Events</a>
-					  <p style="color: #1c3664; text-align: center">Hubover &copy; 2017</p>
 				</div>
 
 				<!-- One -->
-					<section id="home" class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Let's go to the movies.</h1>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button large wide smooth-scroll-middle">Get Started</a></li>
+								<li><a href="#about" class="button large wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
 						</div>
 						<div class="image">
@@ -60,7 +58,7 @@
 					</section>
 
 				<!-- Two -->
-					<section id="about" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+					<section id="about" class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>About us</h2>
 							<p>We're a mobile drive-in movie theater built out of a box truck. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
@@ -315,18 +313,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-			<script>
-				if (window.netlifyIdentity) {
-				  window.netlifyIdentity.on("init", user => {
-					if (!user) {
-					  window.netlifyIdentity.on("login", () => {
-						document.location.href = "/admin/";
-					  });
-					}
-				  });
-				}
-			</script>
 
 	</body>
 </html>
